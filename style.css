@@ -1,0 +1,454 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #000;
+    width: 340px;
+    height: 528px;
+    border-radius: 1rem; /*16px*/
+    padding: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 0.5rem;
+    overflow: auto;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0 1rem 0 1rem;
+    height: 648px;
+}
+
+.music-player {
+    display: flex;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-options {
+    line-height: 2rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-options:hover {
+    opacity: 1;
+}
+
+.nav-options i {
+    font-size: 1.25rem;
+}
+
+.nav-options a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+
+.library {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 100%;
+    
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.lib-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+
+.lib-options a {
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    font-size: 1rem;
+}
+
+.icons i {
+    opacity: 0.6 ;
+    margin-right: 0.15rem;
+    padding: 0 0.65rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+
+.badges {
+    display: flex;
+    padding-left: 0.8rem;
+}
+
+.badges div {
+    background-color: rgb(57, 56, 56);
+    color: white;
+    opacity: 0.7;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: small;
+    border-radius: 1rem;
+    font-weight: 450;
+}
+
+.badges div:hover {
+    opacity: 1;
+}
+
+
+.box1 {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.box1:hover {
+    background-color: #313131;
+    border-radius: 0.5rem;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.box2:hover {
+    background-color: #313131;
+    border-radius: 0.5rem;
+}
+
+.box1 img {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.box1 a {
+    font-size: 0.85rem; 
+    margin-left: 0.75rem;
+    font-weight: 540;
+}
+
+.box2 img {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
+}
+
+.box2 a {
+    font-size: 0.85rem; 
+    margin-left: 0.75rem;
+    font-weight: 540;
+}
+
+
+.sticky-nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: #121212;
+    z-index: 10;
+}
+
+.sticky-nav .button button img {
+    height: 1rem;
+    width: 1rem;
+}
+
+
+.sticky-nav .button{
+    margin:  1rem 1rem;
+    justify-self: space-between;
+}
+.sticky-nav .button button {
+    background-color: #2d2b2b;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 3.125rem;  
+    cursor: pointer; 
+}
+
+.sticky-nav .badges {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    
+
+}
+.sticky-nav .badges .badge1 {
+    height: 2rem;
+    width: 9rem;
+    padding: 0.25rem 1rem;
+    border:none;
+    border-radius: 3.125rem;
+    font-weight: 550;
+    margin-right: 1rem;
+    cursor: pointer; 
+}
+
+.sticky-nav .badges .badge2 {
+    height: 2.1rem;
+    width: 8rem;
+    padding: 0.25rem 1rem;
+    border:none;
+    border-radius: 3.125rem;
+    font-weight: 550;
+    background-color: #000;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer; 
+}
+
+.sticky-nav .badges .badge2 i {
+    margin-right: 0.5rem;
+}
+
+.sticky-nav .badges img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 3.125rem;
+    border: 2px solid black;
+    cursor: pointer; 
+}
+
+@media(max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    opacity: 0.85;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+
+.footer {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 35%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+
+.song-info {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+.song-info {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    
+}
+
+.song-img {
+    width: 3.5rem;
+    padding: 1rem 1rem;
+    border-radius: 24%;
+}
+
+.singer-title {
+    font-size: 0.9rem;
+    font-weight: 450;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: 1rem;
+    margin-left: 5.35rem;
+    margin-right: 1rem;
+}
+
+.singer-name {
+    padding-right: 2rem;
+    font-size: 0.65rem;
+    padding-top: 1.25rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.heart-img {
+    padding-left: 2rem;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.heart-img:hover {
+    opacity: 1;
+}
+
+
+.player-control-icon {
+    height: 1rem;
+    margin-left: 1.65rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: grey;
+    height: 0.25rem;
+    border-radius: 6rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track:hover {
+    background-color: #1bd760;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -0.25rem;
+}
+
+.additional-icons {
+    height: 1rem;
+    width: 1rem;
+    padding: 0.5rem 0.5rem;
+    opacity: 0.7;
+    
+}
+
+.volume {
+    height: 1.8rem;
+    width: 25%;
+    appearance: none;
+    background-color: transparent;
+}
+
+.volume::-webkit-slider-runnable-track {
+    background-color: rgb(192, 178, 178);
+    height: 0.25rem;
+    border-radius: 6rem;
+}
+
+.volume::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -0.25rem;
+}
+
+.additional-icons:hover {
+    opacity: 1;
+}
